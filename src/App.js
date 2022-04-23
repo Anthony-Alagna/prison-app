@@ -1,13 +1,13 @@
-import './App.css';
+import React from 'react';
+import piece from './Components/piece'
+import './App.scss';
+
+const displayEmojiName = event => alert(event.target.id)
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Hello World</h1>
-      </header>
-    </div>
-  );
+  return(
+    
+  )
 }
 
 export default App;
