@@ -1,10 +1,9 @@
 import React from 'react';
 import './App.scss';
-import { sidebar } from './Components/Sidebar/sidebar';
-let poop = new sidebar({})
+import TemporaryDrawer from './Components/Sidebar/sidebar'
 
 function App() {
-  return (poop.render());
+  return (<TemporaryDrawer></TemporaryDrawer>);
 }
 
 export default App;
