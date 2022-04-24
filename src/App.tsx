@@ -1,8 +1,10 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
+import { sidebar } from './Components/Sidebar/sidebar';
+let poop = new sidebar({})
 
 function App() {
-  return (null);
+  return (poop.render());
 }
 
 export default App;

@@ -1,8 +1,9 @@
 {
-  "name": "prision-app",
+  "name": "prison-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@coreui/react": "^4.1.2",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
@@ -12,11 +13,12 @@
     "@types/react-dom": "^18.0.2",
     "async": "^3.2.3",
     "async_hooks": "^1.0.0",
+    "dotenv": "^16.0.0",
     "hooks": "^0.3.2",
     "querystring": "^0.2.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "typescript": "^4.6.3",
     "web-vitals": "^2.1.4"
   },
@@ -43,5 +45,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.tsx",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anthony-Alagna/prison-app.git"
+  },
+  "author": "Anthony Alagna",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Anthony-Alagna/prison-app/issues"
+  },
+  "homepage": "https://github.com/Anthony-Alagna/prison-app#readme"
 }

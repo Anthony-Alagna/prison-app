@@ -1,25 +1,20 @@
-import React, { Component, createElement } from 'react'
+import React, { Component} from 'react'
 import ReactDOM from 'react-dom'
+import { CSidebar, CSidebarBrand, CSidebarHeader, CSidebarNav, CNavTitle, CNavItem } from '@coreui/react'
 
-function listElements() {
-    class sidebar extends React.Component{
-        name: string;
-
-        constructor(name: string) {
-            super(name)
-            console.log("Sidebar Component Created");
-            this.name = name;
-            
-        }
-
-        render(): React.ReactNode {
-            return(
-                createElement("li", {},
-                    createElement("h2", {this.name})
-                )
+export class sidebar extends Component {
+         render() {
+            return (
+                <CSidebar>
+                    <CSidebarBrand>Prison Industrial Complex</CSidebarBrand>
+                    <CSidebarNav>
+                    <CNavItem href="#">Home</CNavItem>
+                    <CNavItem href="#">Why Was This Created?</CNavItem>
+                    <CNavItem href="#">About</CNavItem>
+                    </CSidebarNav>
+                </CSidebar>
             );
         }
     }
 
-}
 
