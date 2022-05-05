@@ -3,7 +3,8 @@ import './App.scss';
 import TemporaryDrawer from './Components/Sidebar/sidebar'
 
 function App() {
-  return (<TemporaryDrawer></TemporaryDrawer>);
+  return (
+  <><TemporaryDrawer></TemporaryDrawer></>);
 }
 
 export default App;
