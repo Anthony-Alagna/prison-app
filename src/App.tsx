@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.scss';
-import GraphNodes  from 
 import TemporaryDrawer from './Components/Sidebar/sidebar'
+import NetworkGraph from './Components/NetworkGraph/GraphComponent'
 
 function App() {
   return (
   <>
-  <GraphNodes></GraphNodes>
+  <NetworkGraph/>
   <TemporaryDrawer></TemporaryDrawer>
   </>
   );
