@@ -5,8 +5,8 @@ import "./styles.css";
 // need to import the vis network css in order to show tooltip
 import "./network.css";
 const Graph = require('react-graph-vis')
-
-function App() {
+ 
+export default  function graphNodes() {
   const graph = {
     nodes: [
       { id: 1, label: "Node 1", title: "node 1 tootip text" },
@@ -49,6 +49,3 @@ function App() {
     />
   );
 }
-
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);

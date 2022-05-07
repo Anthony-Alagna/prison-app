@@ -4,7 +4,11 @@ import TemporaryDrawer from './Components/Sidebar/sidebar'
 
 function App() {
   return (
-  <><TemporaryDrawer></TemporaryDrawer></>);
+  <>
+  <graphNodes></graphNodes>
+  <TemporaryDrawer></TemporaryDrawer>
+  
+  </>);
 }
 
 export default App;

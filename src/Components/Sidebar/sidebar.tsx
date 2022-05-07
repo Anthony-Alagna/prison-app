@@ -26,7 +26,7 @@ export default function TemporaryDrawer() {
     
     const [state, setState] = React.useState({
         top: false,
-        left: true,
+        left: false,
         bottom: false,
         right: false,
     });
