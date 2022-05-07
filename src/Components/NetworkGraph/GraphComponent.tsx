@@ -2,9 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Graph from "react-graph-vis";
 
-import "./styles.css";
-// need to import the vis network css in order to show tooltip
-import "./network.css";
 
  const NetworkGraph = () => {
     const DIR = "../../../img/"
@@ -53,4 +50,4 @@ import "./network.css";
         />
         );
 }
-export default NetworkGraph()
+export default NetworkGraph
