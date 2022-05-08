@@ -2,13 +2,19 @@ import React from 'react';
 import TemporaryDrawer from './Components/Sidebar/sidebar'
 import NetworkGraph from './Components/NetworkGraph/GraphComponent'
 
-const App = () => {
-  return (
-  <>
-  <NetworkGraph/>
-  <TemporaryDrawer></TemporaryDrawer>
-  </>
-  );
+interface Props {
+
+}
+
+class App extends React.Component<Props> {
+  render() {
+    return (
+      <>
+      <NetworkGraph/>
+      <TemporaryDrawer/>
+      </>
+    );
+  }
 }
 
 export default App;

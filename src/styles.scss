@@ -1,0 +1,10 @@
+$primary-color: white;
+$bg: black;
+body{
+width: auto;
+height: max-content
+}
+h1 {
+  color: $primary-color;
+  background-color: $bg;
+}
