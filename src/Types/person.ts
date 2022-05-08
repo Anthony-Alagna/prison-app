@@ -1,4 +1,4 @@
-import { org } from "./organization";
+import { org, reference, article } from "./index";
 
 export interface person {
     firstname: string;
@@ -8,4 +8,6 @@ export interface person {
     organization?: org[] | org;
     recievedMoneyFrom?: org[] | org | string;
     amountRecievedFrom?: org[] | org | number; 
+    relations?: person[] | person;
+    reference?: reference[] | reference 
 }

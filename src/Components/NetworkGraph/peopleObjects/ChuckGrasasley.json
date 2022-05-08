@@ -1,0 +1,17 @@
+{
+  "type": "person",
+  "firstname": "Chuck",
+  "lastname": "Grassley",
+  "title": "Senator",
+  "politicalaffiliation": "Republican",
+  "relations": [
+    {
+      "type": "person",
+      "InternalRef": "./TedCruz.json"
+    },
+    {
+      "type": "person",
+      "InternalRef": "./MikeLee.json"
+    }
+  ]
+}

@@ -1,8 +1,9 @@
 $primary-color: white;
-$bg: black;
+$bg: #222831;
 body{
 width: auto;
-height: max-content
+height: auto;
+background-color: $bg;
 }
 h1 {
   color: $primary-color;

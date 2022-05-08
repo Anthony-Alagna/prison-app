@@ -1,6 +1,4 @@
-import {person} from './person'
-import {org} from './organization'
-import {reference} from './reference'
+import {person, org, reference} from './index'
 
 export interface article {
     referenceURL?: string | reference

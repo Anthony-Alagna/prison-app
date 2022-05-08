@@ -4,12 +4,13 @@ h1 {
 }
 body {
   width: auto;
-  height: max-content;
+  height: auto;
+  background-color: #222831;
 }
 
 h1 {
   color: white;
-  background-color: black;
+  background-color: #222831;
 }
 
 /*# sourceMappingURL=/src.f69400ca.css.map */
