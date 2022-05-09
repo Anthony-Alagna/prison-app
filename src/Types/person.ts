@@ -9,6 +9,6 @@ export interface person {
     organization?: org[] | org;
     recievedMoneyFrom?: org[] | org | string;
     amountRecievedFrom?: org[] | org | number; 
-    relations?: person[] | person;
-    reference?: reference[] | reference 
+    relations?: person[] | person | org | org[],
+    reference?: reference | reference[]
 }

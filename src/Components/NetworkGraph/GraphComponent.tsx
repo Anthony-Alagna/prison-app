@@ -3,13 +3,11 @@ import ReactDOM from "react-dom";
 import Graph from "react-graph-vis";
 import { org, person } from "../../Types/index"
 
-function importPeople(Person: person) {
+/* import OrgsListFull from '../NetworkGraph/orgObjects/orgs';
+import PeopleListFull from "./peopleObjects/people";
 
-
-}
-function importOrgs(Organizations: org) {
-
-}
+let orgsList: org[] = OrgsListFull
+let peopleList: person[] = PeopleListFull */
 
 const NetworkGraph = () => {
     let DIR = "../../../img/"
@@ -23,9 +21,9 @@ const NetworkGraph = () => {
             {
                 id: 1,
                 shape: "circularImage",
-                image: DIR + "missing.png",
+                image: "broken",
                 brokenImage: DIR + "missing_png.png",
-                label: "when images\nfail\nto load",
+                label: "broken"
             },
             {
                 id: 2,
