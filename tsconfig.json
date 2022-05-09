@@ -7,7 +7,7 @@
         "noImplicitAny": true,
         "module": "es2022",
         "moduleResolution": "node",
-        "target": "esnext",
+        "target": "es2022",
         "allowJs": true,
         "jsx": "react",
     },
