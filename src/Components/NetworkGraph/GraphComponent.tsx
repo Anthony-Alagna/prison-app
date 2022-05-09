@@ -4,15 +4,15 @@ import Graph from "react-graph-vis";
 import { org, person } from "../../Types/index"
 
 function importPeople(Person: person) {
-    
-    
+
+
 }
-function importOrgs(Organizations: org){
+function importOrgs(Organizations: org) {
 
 }
 
- const NetworkGraph = () => {
-    const DIR = "../../../img/"
+const NetworkGraph = () => {
+    let DIR = "../../../img/"
     const DIRperson = DIR + "People"
     const DIROrg = DIR + "Organizations"
     const graph = {
@@ -24,14 +24,14 @@ function importOrgs(Organizations: org){
                 id: 1,
                 shape: "circularImage",
                 image: DIR + "missing.png",
-                brokenImage: DIR + "missingBrokenImage.png",
+                brokenImage: DIR + "missing_png.png",
                 label: "when images\nfail\nto load",
             },
             {
                 id: 2,
                 shape: "circularImage",
                 image: DIR + "missing.png",
-                brokenImage: DIR + "missingBrokenImage.png",
+                brokenImage: DIR + "missing_png.png",
                 label: "when images\nfail\nto load",
             },
         ],
@@ -63,12 +63,12 @@ function importOrgs(Organizations: org){
 
     return (
         <Graph
-        graph={graph}
-        options={options}
-        getNetwork={network => {
-            //  if you want access to vis.js network api you can set the state in a parent component using this property
-        }}
+            graph={graph}
+            options={options}
+            getNetwork={network => {
+                //  if you want access to vis.js network api you can set the state in a parent component using this property
+            }}
         />
-        );
+    );
 }
 export default NetworkGraph

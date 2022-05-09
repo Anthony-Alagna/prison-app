@@ -1,7 +1,11 @@
 import {person, reference, article} from './index'
 
+interface lobby{
+
+}
 export interface org{
-    members: string[] | string | person[] | person;
+    orgName: string
+    members?: string[] | string | person[] | person;
     orgAffiliations?: person[] | person | string[];
-    lobbiedFor?: string[]
+    lobbiedFor?: lobby
 }

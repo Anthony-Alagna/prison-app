@@ -4,7 +4,8 @@ export interface person {
     firstname: string;
     middlename?: string;
     lastname: string;
-    politicalaffiliation?: "Democrat" | "Republcian" | "Independant";
+    title?: string;
+    politicalaffiliation?: "Democrat" | "Republican" | "Independent";
     organization?: org[] | org;
     recievedMoneyFrom?: org[] | org | string;
     amountRecievedFrom?: org[] | org | number; 
