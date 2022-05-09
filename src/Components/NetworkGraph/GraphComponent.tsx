@@ -2,12 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Graph from "react-graph-vis";
 import { org, person } from "../../Types/index"
+import ChuckGrassley from '../../../img/People/ChuckGrassley.png'
 
 /* import OrgsListFull from '../NetworkGraph/orgObjects/orgs';
 import PeopleListFull from "./peopleObjects/people";
 
 let orgsList: org[] = OrgsListFull
 let peopleList: person[] = PeopleListFull */
+
 
 const NetworkGraph = () => {
     let DIR = "../../../img/"
@@ -21,7 +23,7 @@ const NetworkGraph = () => {
             {
                 id: 1,
                 shape: "circularImage",
-                image: "broken",
+                image: ChuckGrassley,
                 brokenImage: DIR + "missing_png.png",
                 label: "broken"
             },

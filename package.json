@@ -1,6 +1,6 @@
 {
   "name": "prison-app",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "@coreui/react": "^4.1.2",
@@ -62,8 +62,7 @@
       "last 1 safari version"
     ]
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.tsx",
+  "description": "This project visualizes the prison industrial complex using a network graph",
   "devDependencies": {
     "@babel/core": "^7.17.10",
     "@babel/preset-env": "^7.17.10",
