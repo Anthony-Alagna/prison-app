@@ -18,17 +18,15 @@ import IconDashboard from '@material-ui/icons/Dashboard';
 import InfoIcon from '@material-ui/icons/Info';
 import SettingsIcon from '@material-ui/icons/Settings';
 import AutoAwesomeMotionIcon from '@mui/icons-material/AutoAwesomeMotion';
+import MenuIcon from '@mui/icons-material/Menu';
 
-type Anchor = 'top' | 'left' | 'bottom' | 'right';
+type Anchor = 'left';
 const drawerWidth = 200;
 
 export default function TemporaryDrawer() {
     
     const [state, setState] = React.useState({
-        top: false,
         left: false,
-        bottom: false,
-        right: false,
     });
 
     const useStyles = makeStyles(theme =>
@@ -65,12 +63,6 @@ export default function TemporaryDrawer() {
 
     const list = (anchor: Anchor) => (
         <>
-            <Box
-                sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
-                role="presentation"
-                onClick={toggleDrawer(anchor, false)}
-                onKeyDown={toggleDrawer(anchor, false)}
-            ></Box>
             <List component="nav" className={classes.appMenu} disablePadding>
                 <ListItem button className={classes.menuItem}>
                     <ListItemIcon className={classes.menuItemIcon}>
@@ -106,9 +98,9 @@ export default function TemporaryDrawer() {
 
     return (
         <div>
-            {(['left', 'right', 'top', 'bottom'] as const).map((anchor) => (
+            {(['left'] as const).map((anchor) => (
                 <React.Fragment key={anchor}>
-                    <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
+                    <Button onClick={toggleDrawer(anchor, true)}>{<MenuIcon/>}</Button>
                     <Drawer
                         anchor={anchor}
                         open={state[anchor]}

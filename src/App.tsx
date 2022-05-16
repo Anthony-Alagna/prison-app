@@ -10,8 +10,8 @@ class App extends React.Component<Props> {
   render() {
     return (
       <>
-      <NetworkGraph/>
       <TemporaryDrawer/>
+      <NetworkGraph/>
       </>
     );
   }
