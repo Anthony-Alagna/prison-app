@@ -1,12 +1,6 @@
 import React from 'react'
 import { makeStyles, createStyles } from '@material-ui/core/styles'
 
-//List Item Imports
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-
 //Drawer Imports
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
@@ -15,7 +9,7 @@ import Divider from '@material-ui/core/Divider';
 
 
 type Anchor = 'right';
-const drawerWidth = 200;
+const drawerWidth = 600;
 
 export default function RenderInfo() {
 
@@ -48,7 +42,7 @@ export default function RenderInfo() {
 
     const information = (anchor: Anchor) => (
         <>
-            <
+            
         </>
     );
 
