@@ -7,11 +7,6 @@ import DavidPerdue from '../../../img/People/DavidPerdue.png'
 import MissingPng from '../../../img/missing_png.png'
 import GEOGroup from '../../../img/Organizations/GEOGroup.png'
 
-/* import OrgsListFull from '../NetworkGraph/orgObjects/orgs';
-import PeopleListFull from "./peopleObjects/people";
-
-let orgsList: org[] = OrgsListFull
-let peopleList: person[] = PeopleListFull */
 
 
 
@@ -74,6 +69,11 @@ const NetworkGraph = () => {
             graph={graph}
             options={options}
             getNetwork={network => {
+                network.on("click", function(params) {
+                      
+                    
+                });
+
                 //  if you want access to vis.js network api you can set the state in a parent component using this property
             }}
         />
