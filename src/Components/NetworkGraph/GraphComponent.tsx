@@ -44,7 +44,6 @@ const NetworkGraph = () => {
             },
         ],
         edges: [
-            { from: 3, to: 1},
             { from: 3, to: 2},
         ]
     };
@@ -54,7 +53,7 @@ const NetworkGraph = () => {
         height: '500px', //fix this to not be static
         width: '100%',
         nodes: {
-            borderWidth: 4,
+            borderWidth: 6,
             size: 30,
             color: {
                 border: "#222222",
