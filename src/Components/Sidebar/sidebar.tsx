@@ -41,7 +41,10 @@ export default function TemporaryDrawer() {
                 width: drawerWidth,
             },
             menuItemIcon: {
-                color: '#97c05c',
+                color: '#00ADB5',
+            },
+            menuIcon:{
+                color: '#00ADB5',
             },
         }),
     )
@@ -100,7 +103,7 @@ export default function TemporaryDrawer() {
         <div>
             {(['left'] as const).map((anchor) => (
                 <React.Fragment key={anchor}>
-                    <Button onClick={toggleDrawer(anchor, true)}>{<MenuIcon/>}</Button>
+                    <Button onClick={toggleDrawer(anchor, true)}><MenuIcon/></Button>
                     <Drawer
                         anchor={anchor}
                         open={state[anchor]}
