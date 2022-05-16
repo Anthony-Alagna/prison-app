@@ -3,6 +3,9 @@ import ReactDOM from "react-dom";
 import Graph from "react-graph-vis";
 import { org, person } from "../../Types/index"
 import ChuckGrassley from '../../../img/People/ChuckGrassley.png'
+import DavidPerdue from '../../../img/People/DavidPerdue.png'
+import MissingPng from '../../../img/missing_png.png'
+import GEOGroup from '../../../img/Organizations/GEOGroup.png'
 
 /* import OrgsListFull from '../NetworkGraph/orgObjects/orgs';
 import PeopleListFull from "./peopleObjects/people";
@@ -11,10 +14,8 @@ let orgsList: org[] = OrgsListFull
 let peopleList: person[] = PeopleListFull */
 
 
+
 const NetworkGraph = () => {
-    let DIR = "../../../img/"
-    const DIRperson = DIR + "People"
-    const DIROrg = DIR + "Organizations"
     const graph = {
 
         //convert to import people and org objects, populate 
@@ -24,19 +25,27 @@ const NetworkGraph = () => {
                 id: 1,
                 shape: "circularImage",
                 image: ChuckGrassley,
-                brokenImage: DIR + "missing_png.png",
-                label: "broken"
+                brokenImage: MissingPng,
+                label: "Chuck Grassley"
             },
             {
                 id: 2,
                 shape: "circularImage",
-                image: DIR + "missing.png",
-                brokenImage: DIR + "missing_png.png",
-                label: "when images\nfail\nto load",
+                image: DavidPerdue,
+                brokenImage: MissingPng,
+                label: "David Perdue",
+            },
+            {
+                id: 3,
+                shape: "circularImage",
+                image: GEOGroup,
+                brokenImage: MissingPng,
+                label: "GEO Group",
             },
         ],
         edges: [
-            { from: 1, to: 2 },
+            { from: 3, to: 1},
+            { from: 3, to: 2},
         ]
     };
 

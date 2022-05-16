@@ -18,18 +18,24 @@ const PeopleListFull: person[] = [
 {
     firstname: "Chuck",
     lastname: "Grassley",
-    "title": "Senator",
-    "politicalaffiliation": "Republican",
-    "relations": [ 
+    title: "Senator",
+    politicalaffiliation: "Republican",
+    relations: [ 
         
     ],
-    "reference": {
-        "picture": "prison-app\\img\\People\\ChuckGrassley.png",
-        "article": {
+    reference: {
+        picture: "prison-app\\img\\People\\ChuckGrassley.png",
+        article: {
             URL: "https://reason.com/2015/02/12/chuck-grassley-says-sentencing-reforms-b/",
             picture: "prison-app\\img\\People\\Grassley-at-marijuana-hearing.jpg",
             orgsInvolved: OrgsList[0] //Apollo Global Managment
         }
     }
 },
+{
+    firstname: "David",
+    lastname: "Perdue",
+    title: "Senator",
+    politicalaffiliation: "Republican",
+}
 ]
